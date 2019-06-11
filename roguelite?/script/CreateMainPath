@@ -57,6 +57,16 @@ while (currentY < 4)
     sections[currentX, currentY] = 2;
     sections[currentX, ++currentY] = 3;
     newDirection = 0;
+    
+    if (currentX == xSections - 1)
+      newDirection = choose(1, 1, 3)
+     else if (currentX = 0)
+      newDirection = choose(2, 2, 3);
+      
+  } 
+  else
+  {
+    ++currentY ;
   }
   }
 }
