@@ -21,7 +21,7 @@ for (_y =0; _y < ySections; _y++)
    Sections[_X, _y] = 0;
     
 // create main path
-
+CreateMainPath();
 // initializing our sections loading sections as strings
 
 // create our level
