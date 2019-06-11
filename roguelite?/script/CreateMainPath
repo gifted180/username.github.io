@@ -1,0 +1,62 @@
+//select starting section 
+var currentY = 0; //makes the starting section at the top
+var currentX = choose(0,1,2,3); //choose what section
+var newDirection = 0; //keep track of what direction to move
+
+sections[currentX, currentY] = 1; Start with exit left and right
+
+while (currentY < 4)
+{
+  if (newDirection == 0)
+   newDirection = choose(1, 1, 2, 2, 3);
+  
+  //move us left direction = 1
+  if (newDirection == 1)
+  {
+  if (currentX > 0)
+   {
+   sesections[--currentX, currentY] = 1;
+   newDirection = 0;
+   }
+  else
+  {
+  //can't move left,need to move down, need to change current room to a "2" and next room to a "2"
+    if (currentY < 3)
+  }
+    sections[currentX, currentY] = 2;
+    sections[currentX, ++currentY] = 3;
+    newDirection = 2;
+  }
+   else 
+    ++currentY // exit out of loop
+  }
+  //move us right if diretion = 2
+  else if (newDirection == 2)
+  {
+    if (currentX < 3)
+   {
+   sesections[--currentX, currentY] = 1; // set section type to entrance left and right
+   newDirection = 0;
+   }
+  else
+  {
+  //can't move left,need to move down, need to change current room to a "2" and next room to a "2"
+    if (currentY < 3)
+  }
+    sections[currentX, currentY] = 2;
+    sections[currentX, ++currentY] = 3;
+    newDirection = 2;
+  }
+   else 
+    ++currentY // exit out of loop
+  }
+  else if (newDirection == 3)
+  {
+    if (currentY < 3)
+  {
+    sections[currentX, currentY] = 2;
+    sections[currentX, ++currentY] = 3;
+    newDirection = 0;
+  }
+  }
+}
