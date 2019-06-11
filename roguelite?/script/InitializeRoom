@@ -1,0 +1,31 @@
+randomize();
+
+gridsize = 32; //block size
+
+xSections = 4; //cords x
+ySections = 4; //cords y
+Sections = []; //declare our rooms array
+
+
+sectionTilesx = 10; //how many tiles wide the section is
+sectionTilesy = 8; //how many tiles tall the section is
+
+sectionWidth = sectionTilesX * gridSize; //width of 1 section in pixels
+sectionWidth = sectionTilesX * gridSize; //height of 1 section in pixels
+
+room_width = (sectionWidth * xSections) + (gridSize * 2);
+room_height = (sectionHeight * ySections) + (gridSize * 2);
+
+for (_y =0; _y < ySections; _y++)
+  for (_X = 0; _X = xSections; _X++)
+   Sections[_X, _y] = 0;
+    
+// create main path
+
+// initializing our sections loading sections as strings
+
+// create our level
+
+// de-initializing sections
+
+
