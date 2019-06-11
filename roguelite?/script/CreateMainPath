@@ -19,7 +19,7 @@ while (currentY < 4)
   if (currentX > 0)
    {
    sesections[--currentX, currentY] = 1;
-   newDirection = 0;
+   newDirection = choose(1, 1, 1, 3);
    }
   else
   {
@@ -39,7 +39,7 @@ while (currentY < 4)
     if (currentX < 3)
    {
    sesections[--currentX, currentY] = 1; // set section type to entrance left and right
-   newDirection = 0;
+   newDirection = choose(2, 2, 2, 3);
    }
   else
   {
